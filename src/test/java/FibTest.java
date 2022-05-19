@@ -34,6 +34,13 @@ class FibTest {
     }
 
     @Test
+    void shouldReturn2forFib3() {
+        int expectedResult = 2;
+        int actualResult = Fib.fib(3);
+        Assertions.assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
     void shouldReturn0forFibIterative0() {
         int expectedResult = 0;
         int actualResult = Fib.fibIterative(0);
@@ -60,5 +67,14 @@ class FibTest {
         int actualResult = Fib.fibIterative(6);
         Assertions.assertEquals(expectedResult, actualResult);
     }
+
+    @Test
+    void shouldReturn2forFibIterative3() {
+        int expectedResult = 2;
+        int actualResult = Fib.fibIterative(3);
+        Assertions.assertEquals(expectedResult, actualResult);
+    }
+
+
 
 }
